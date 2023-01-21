@@ -1,0 +1,470 @@
+@use './reset' as *;
+@use './colors' as *;
+
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	max-width: 1740px;
+	padding: 0 5em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.menu__menu {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	a {
+		text-shadow: 0 0 6px #00000029;
+		padding: 0.5em;
+	}
+
+	a:hover {
+		color: var(--accent);
+	}
+}
+
+////////////////
+// NAVIGATION //
+////////////////
+
+nav {
+	.nav_bg {
+		position: fixed;
+		width: 100%;
+		height: 144px;
+		background: linear-gradient(0deg, var(--dark-0) 0%, var(--dark-40) 100%);
+	}
+	.nav {
+		z-index: 100;
+		top: 0;
+		position: fixed;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 144px;
+
+		.menu__mobile-languages {
+			display: flex;
+			flex-direction: column;
+
+			&--one-item {
+				display: block;
+
+				a {
+					display: flex;
+					align-items: center;
+
+					img {
+						padding-right: 0.5em;
+					}
+				}
+			}
+
+			&--all-items {
+				display: none;
+				position: relative;
+				top: 51px;
+				background-color: var(--dark);
+				padding: 0.5em 1em;
+				border-radius: 5px;
+
+				a {
+					display: flex;
+					align-items: center;
+
+					img {
+						padding-right: 0.5em;
+					}
+				}
+			}
+
+			.active {
+				display: block;
+			}
+		}
+
+		.menu__languages {
+			display: none;
+
+			a {
+				display: flex;
+				align-items: center;
+
+				img {
+					padding-right: 0.5em;
+				}
+			}
+		}
+	}
+
+	.logo {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+		img {
+			width: 150px;
+		}
+	}
+
+	.menu__menu-desktop {
+		display: none;
+	}
+
+	.menu__mobile-menu {
+		position: relative;
+		display: flex;
+		height: 70px;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+		cursor: pointer;
+
+		&--top,
+		&--middle,
+		&--bottom {
+			height: 6px;
+			width: 40px;
+			background-color: var(--dark);
+			border-radius: 100px;
+			transition: transform 0.4s ease-in-out;
+		}
+
+		&--top {
+			position: absolute;
+			top: 20px;
+			// transform: rotate(405deg);
+		}
+
+		&--bottom {
+			position: absolute;
+			bottom: 20px;
+			// transform: rotate(-405deg);
+		}
+	}
+
+	.menu__mobile-menu:hover {
+		.menu__mobile-menu--top {
+			top: 46%;
+			transform: rotate(45deg);
+		}
+
+		.menu__mobile-menu--middle {
+			transform: scale(0);
+		}
+
+		.menu__mobile-menu--bottom {
+			bottom: 46%;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+//////////////////
+// MAIN SECTION //
+//////////////////
+
+.main {
+	position: relative;
+	height: 100vh;
+
+	&__hero-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background-image: url('/dist/img/Dysze PB i NNPB - TECHGAFIL.webp');
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__hero-img--products {
+		background-image: url('/dist/img/Dysze PB i NNPB - TECHGAFIL Produkty.webp');
+	}
+
+	&__hero-shadow {
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(var(--dark-70), var(--dark-0));
+	}
+
+	&__hero-shadow--products-page {
+		background: var(--dark-40);
+	}
+
+	&__text {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		top: 30vh;
+		position: absolute;
+
+		&--contact {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			bottom: 3rem;
+		}
+
+		&-icon {
+			&--contact {
+				width: 30px;
+			}
+		}
+
+		&-header {
+			margin-bottom: 3.5rem;
+			font-size: 7.2rem;
+			font-weight: 100;
+			text-shadow: 0 0 6px #00000029;
+			text-align: center;
+
+			span {
+				font-weight: 700;
+			}
+
+			&--contact {
+				font-size: 5.6rem;
+				text-transform: uppercase;
+				margin-bottom: 0.1em;
+			}
+		}
+
+		&-paragraf {
+			text-align: center;
+			font-size: 3rem;
+			font-weight: 300;
+		}
+
+		&-header--center {
+			flex-grow: 100;
+		}
+
+		&-header--left {
+			position: relative;
+			width: 45%;
+		}
+		&-header--right {
+			position: relative;
+			width: 45%;
+		}
+	}
+}
+
+/////////////
+// CONTACT //
+/////////////
+
+.contact__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 10em 10em;
+}
+
+.contact-info {
+	width: 35%;
+	background: var(--dark);
+	color: #fff;
+	padding: 5em;
+
+	&__header {
+		font-size: 5.4rem;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	&__text {
+		font-size: 2rem;
+		margin-bottom: 3em;
+	}
+
+	&__company-name {
+		text-transform: uppercase;
+	}
+
+	&__addres-data {
+		font-size: 2rem;
+		margin-bottom: 1em;
+	}
+}
+
+.contact-form {
+	width: 35%;
+	color: var(--dark);
+
+	&__header {
+		font-size: 5.4rem;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		padding: 1px;
+
+		label {
+			font-size: 2rem;
+			font-weight: 700;
+		}
+
+		input,
+		textarea {
+			border: none;
+			border-bottom: 0.25px solid var(--dark);
+			padding: 1em;
+			font-weight: 100;
+			font-size: 2rem;
+			margin-bottom: 1.5em;
+		}
+
+		button {
+			align-self: center;
+			margin-top: 1em;
+			font-weight: 700;
+			font-size: 3.2rem;
+			color: #fff;
+			background: var(--dark);
+			padding: 0.5em 1.5em;
+			border-radius: 100px;
+		}
+	}
+}
+
+////////////
+// FOOTER //
+////////////
+
+footer {
+	background-color: var(--dark);
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	position: relative;
+
+	.footer {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo {
+			padding: 3em 6em 3em 0;
+
+			img {
+				width: 150px;
+			}
+		}
+
+		.menu__menu {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		&__social {
+			display: flex;
+			align-items: center;
+
+			a {
+				img {
+					padding: 1em;
+					width: 6em;
+				}
+			}
+		}
+	}
+}
+
+///////////
+// MEDIA //
+///////////
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+	nav {
+		.logo {
+			img {
+				width: 230px;
+			}
+		}
+	}
+
+	footer {
+		.footer {
+			.logo {
+				img {
+					width: 230px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	nav {
+		.menu__menu-desktop {
+			display: flex;
+		}
+		.menu__mobile-menu {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	nav {
+		.footer {
+			.logo {
+				img {
+					width: 322px;
+				}
+			}
+		}
+	}
+
+	footer {
+		.logo {
+			img {
+				width: 322px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1500px) {
+	nav {
+		.menu__mobile-menu {
+			display: none;
+		}
+		.nav {
+			.menu__mobile-languages {
+				display: none;
+			}
+			.menu__languages {
+				display: flex;
+			}
+		}
+	}
+}

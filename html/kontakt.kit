@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dysze chłodzące NNPB i półfabrykaty - TECHGAFIL</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+
+    <!--- @include 'nav.kit' -->
+    <section class="main">
+
+        <div class="main__hero-img">
+            <div class="main__hero-shadow"></div>
+        </div>
+
+        <div class="main__text--contact wrapper">
+            <a href="#contact">
+                <h1 class="main__text-header main__text-header--contact">Kontakt</h1>
+                <img class="main__text-icon--contact" src="/dist/img/Path 5.svg" alt="arrow down">
+            </a>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact__wrapper wrapper">
+            <div class="contact-info">
+                <h3 class="contact-info__header">Informacje</h3>
+                <p class="contact-info__text">Specjalizujemy się w produkcji dysz chłodzących NNPB i PB - niezbędnych w produkcji opakowań szklanych. </p>
+                <p class="contact-info__addres-data contact-info__company-name">TECHGAFIL</p>
+                <p class="contact-info__addres-data">Adres: <br>Głuchów 167, 37-100 Łańcut</p>
+                <p class="contact-info__addres-data">Telefon: <br><a href="tel:+48693341017">+48 693 341 017</a></p>
+                <p class="contact-info__addres-data">E-mail: <br><a href="mailto: biuro@techgafil.pl">biuro@techgafil.pl</a></p>
+            </div>
+            <div class="contact-form">
+                <h3 class="contact-form__header">Forumlarz<br>kontatkowy</h3>
+                <form class="contact-form__form">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" id="name" name="name" placeholder="Twoje imię i nazwisko...">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Twój aders e-mail...">
+                    
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Twój nr telefonu...">
+                    
+                    <label for="message">Wiadomość</label>
+                    <textarea type="textarea" id="message" name="message" placeholder="Twoja wiadomość..."></textarea>
+
+                    <button>Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--- @include 'footer.kit' -->
+
+    <script src="dist/js/script.min.js"></script>
+</body>
+
+</html>
