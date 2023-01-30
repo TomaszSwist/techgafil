@@ -1,15 +1,34 @@
-const languageOne = document.querySelector('.menu__mobile-languages--one-item')
-const languageAll = document.querySelector('.menu__mobile-languages--all-items')
+const nav = document.querySelector('.nav_bg')
+const mobileMenuBars = document.querySelectorAll(
+	'.menu__mobile-menu--top,.menu__mobile-menu--middle,.menu__mobile-menu--bottom'
+)
 
-const showLanguages = () => {
-    languageAll.classList.add('active')
-    languageOne.style.display = 'none'
+const mobileArea = document.querySelector('.menu__mobile-menu--area')
+const mobileMenu = document.querySelector('.menu__mobile-menu')
+
+const handleNavColor = () => {
+	if (window.scrollY >= 144) {
+		nav.classList.add('nav_bg--color')
+		mobileMenuBars.forEach(el => {
+			el.style.backgroundColor = '#fff'
+		})
+	} else {
+		nav.classList.remove('nav_bg--color')
+		mobileMenuBars.forEach(el => {
+			el.style.removeProperty('background-color')
+		})
+	}
 }
 
-const hideLanguages = () => {
-    languageAll.classList.remove('active')
-    languageOne.style.display = 'block'
+const handleMenu = () => {
+	mobileArea.classList.toggle('active')
+	mobileMenuBars[0].classList.toggle('top-show')
+	mobileMenuBars[1].classList.toggle('middle-show')
+	mobileMenuBars[2].classList.toggle('bottom-show')
 }
 
-languageOne.addEventListener('mouseenter', showLanguages)
-languageAll.addEventListener('mouseleave', hideLanguages)
+
+
+
+window.addEventListener('scroll', handleNavColor)
+mobileMenu.addEventListener('click', handleMenu)

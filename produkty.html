@@ -14,80 +14,117 @@
 </head>
 
 <body>
-   
-        <nav>
+
+    <nav>
     <div class="nav_bg"></div>
     <div class="nav wrapper">
 
         <div class="menu__mobile-languages">
             <div class="menu__menu menu__mobile-languages--one-item">
-                <a><img src="/dist/img/united-kingdom.webp"
-                        alt="flaga Wielkiej Brytanii">English</a>
+                <a><img src="dist/img/united-kingdom.webp" alt="flaga Wielkiej Brytanii">Languages</a>
+                <img class="menu__mobile-flag" src="dist/img/united-kingdom.webp" alt="flaga Wielkiej Brytanii">
             </div>
             <div class="menu__menu menu__mobile-languages--all-items">
-                <a href="https://techgafil.pl/en"><img src="/dist/img/united-kingdom.webp"
+                <a href="https://techgafil.pl/en"><img src="dist/img/united-kingdom.webp"
                         alt="flaga Wielkiej Brytanii">English</a>
-                <a href="https://techgafil.pl"><img src="/dist/img/poland.webp" alt="flaga Polski">Polski</a>
-                <a href="https://techgafil.pl/de"><img src="/dist/img/germany.webp" alt="flaga Niemiec">Deutsche</a>
+                <a href="https://techgafil.pl"><img src="dist/img/poland.webp" alt="flaga Polski">Polski</a>
+                <a href="https://techgafil.pl/de"><img src="dist/img/germany.webp" alt="flaga Niemiec">Deutsche</a>
             </div>
         </div>
         <div class="menu__menu menu__languages">
-            <a href="https://techgafil.pl"><img src="/dist/img/poland.webp" alt="flaga Polski">Polski</a>
-            <a href="https://techgafil.pl/en"><img src="/dist/img/united-kingdom.webp"
+            <a href="https://techgafil.pl"><img src="dist/img/poland.webp" alt="flaga Polski">Polski</a>
+            <a href="https://techgafil.pl/en"><img src="dist/img/united-kingdom.webp"
                     alt="flaga Wielkiej Brytanii">English</a>
-            <a href="https://techgafil.pl/de"><img src="/dist/img/germany.webp" alt="flaga Niemiec">Deutsche</a>
+            <a href="https://techgafil.pl/de"><img src="dist/img/germany.webp" alt="flaga Niemiec">Deutsche</a>
         </div>
 
         <div class="menu__mobile-menu">
             <div class="menu__mobile-menu--top"></div>
             <div class="menu__mobile-menu--middle"></div>
             <div class="menu__mobile-menu--bottom"></div>
+
+            <div class="menu__menu menu__mobile-menu--area">
+                <a href="produkty.html">Produkty</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
         </div>
         <div class="menu__menu menu__menu-desktop">
             <a href="produkty.html">Produkty</a>
             <a href="kontakt.html">Kontakt</a>
-
         </div>
 
         <a href="#" class="logo"><img src="dist/img/TECHGAFIL - logo white.webp" alt="TECHGAFIL - logo"></a>
 
     </div>
 </nav>
-        <section class="main">
+    <section class="main">
 
-            <div class="main__hero-img main__hero-img--products">
-                <div class="main__hero-shadow main__hero-shadow--products-page"></div>
-            </div>
+        <div class="main__hero-img-products">
+            <div class="main__hero-img-products--one"></div>
+            <div class="main__hero-img-products--two"></div>
+        </div>
 
-            <div class="main__text wrapper">
-                <a href="" class="main__text-header--left">
-                    <h1 class="main__text-header">Dysze chłodzące <br><span>PB</span> i <span>NNPB</span></h1>
-                    <p class="main__text-paragraf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur error ea vitae. Vel alias amet, dolor maiores consequuntur sit?
-                    </p>
-                </a>
-                <a href="" class="main__text-header--right">
-                    <h1 class="main__text-header">Dysze chłodzące <br><span>PB</span> i <span>NNPB</span></h1>
-                    <p class="main__text-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur ipsa nemo doloremque soluta veniam suscipit eos nobis, sed numquam.
-                    </p>
-                </a>
+
+        <div class="main__text wrapper">
+            <div href="" class="main__text-header--left" onclick="openGallery('nnpb')">
+                <h1 class="main__text-header">Dysze chłodzące <br><span>NNPB</span></h1>
+                <p class="main__text-paragraf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    tenetur error ea vitae. Vel alias amet, dolor maiores consequuntur sit?
+                </p>
             </div>
-        </section>
-        <footer>
+            <div class="main__text-header--right" onclick="openGallery('pb')">
+                <h1 class="main__text-header">Dysze chłodzące <br><span>PB</span></h1>
+                <p class="main__text-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                    consequuntur ipsa nemo doloremque soluta veniam suscipit eos nobis, sed numquam.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-img">
+        <button class="product-img__close-btn"><img src="dist/img/xmark-solid.svg" alt="zamknij"></button>
+        <button class="product-img__left-btn"><img src="dist/img/left.svg" alt="przewiń w lewo"></button>
+        <button class="product-img__right-btn"><img src="dist/img/right.svg" alt="przewiń w prawo"></button>
+        <div class="product-img__container">
+            <div class="product-img__box" data-choice="nnpb" data-img-choice="1">
+                <div class="product-img__img"></div>
+                <p class="product-img__text">Dysze NNPB. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    TECHGAFIL</p>
+            </div>
+            <div class="product-img__box" data-choice="nnpb" data-img-choice="2">
+                <div class="product-img__img"></div>
+                <p class="product-img__text">Dysze NNPB. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    TECHGAFIL</p>
+            </div>
+            <div class="product-img__box" data-choice="pb" data-img-choice="1">
+                <div class="product-img__img"></div>
+                <p class="product-img__text">Dysze PB. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    TECHGAFIL</p>
+            </div>
+            <div class="product-img__box" data-choice="pb" data-img-choice="2">
+                <div class="product-img__img"></div>
+                <p class="product-img__text">Dysze PB. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    TECHGAFIL</p>
+            </div>
+        </div>
+    </section>
+    <footer>
     <div class="footer wrapper">
         <div class="menu__menu">
             <a href="produkty.html">Produkty</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
-        <a href="#" class="logo"><img src="/dist/img/TECHGAFIL - logo white.webp" alt="TECHGAFIL - logo"></a>
+        <a href="#" class="logo"><img src="dist/img/TECHGAFIL - logo white.webp" alt="TECHGAFIL - logo"></a>
         <div class="footer__social">
-            <a href="#"><img src="/dist/img/whatsup.svg" alt="whatsup social icon"></a>
-            <a href="#"><img src="/dist/img/facebook.svg" alt="facebook social icon"></a>
-            <a href="#"><img src="/dist/img/youtube.svg" alt="youtube social icon"></a>
+            <a href="#"><img src="dist/img/whatsup.svg" alt="whatsup social icon"></a>
+            <a href="#"><img src="dist/img/facebook.svg" alt="facebook social icon"></a>
+            <a href="#"><img src="dist/img/youtube.svg" alt="youtube social icon"></a>
         </div>
     </div>
 </footer>
 
     <script src="dist/js/script.min.js"></script>
+    <script src="dist/js/product.min.js"></script>
 </body>
 
 </html>

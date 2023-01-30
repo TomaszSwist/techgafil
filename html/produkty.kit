@@ -14,30 +14,63 @@
 </head>
 
 <body>
-   
-        <!--- @include 'nav.kit' -->
-        <section class="main">
 
-            <div class="main__hero-img main__hero-img--products">
-                <div class="main__hero-shadow main__hero-shadow--products-page"></div>
-            </div>
+    <!--- @include 'nav.kit' -->
+    <section class="main">
 
-            <div class="main__text wrapper">
-                <a href="" class="main__text-header--left">
-                    <h1 class="main__text-header">Dysze chłodzące <br><span>PB</span> i <span>NNPB</span></h1>
-                    <p class="main__text-paragraf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur error ea vitae. Vel alias amet, dolor maiores consequuntur sit?
-                    </p>
-                </a>
-                <a href="" class="main__text-header--right">
-                    <h1 class="main__text-header">Dysze chłodzące <br><span>PB</span> i <span>NNPB</span></h1>
-                    <p class="main__text-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur ipsa nemo doloremque soluta veniam suscipit eos nobis, sed numquam.
-                    </p>
-                </a>
+        <div class="main__hero-img-products">
+            <div class="main__hero-img-products--one"></div>
+            <div class="main__hero-img-products--two"></div>
+        </div>
+
+
+        <div class="main__text wrapper">
+            <div href="" class="main__text-header--left" onclick="openGallery('nnpb')">
+                <h1 class="main__text-header">Dysze chłodzące <br><span>NNPB</span></h1>
+                <p class="main__text-paragraf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    tenetur error ea vitae. Vel alias amet, dolor maiores consequuntur sit?
+                </p>
             </div>
-        </section>
-        <!--- @include 'footer.kit' -->
+            <div class="main__text-header--right" onclick="openGallery('pb')">
+                <h1 class="main__text-header">Dysze chłodzące <br><span>PB</span></h1>
+                <p class="main__text-paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                    consequuntur ipsa nemo doloremque soluta veniam suscipit eos nobis, sed numquam.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-img">
+        <button class="product-img__close-btn"><img src="dist/img/xmark-solid.svg" alt="zamknij"></button>
+        <button class="product-img__left-btn"><img src="dist/img/left.svg" alt="przewiń w lewo"></button>
+        <button class="product-img__right-btn"><img src="dist/img/right.svg" alt="przewiń w prawo"></button>
+        <div class="product-img__container">
+            <div class="product-img__box" data-choice="nnpb" data-img-choice="1">
+                <div class="product-img__img"></div>
+                <p class="product-img__text">Dysze NNPB. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    TECHGAFIL</p>
+            </div>
+            <div class="product-img__box" data-choice="nnpb" data-img-choice="2">
+                <div class="product-img__img"></div>
+                <p class="product-img__text">Dysze NNPB. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    TECHGAFIL</p>
+            </div>
+            <div class="product-img__box" data-choice="pb" data-img-choice="1">
+                <div class="product-img__img"></div>
+                <p class="product-img__text">Dysze PB. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    TECHGAFIL</p>
+            </div>
+            <div class="product-img__box" data-choice="pb" data-img-choice="2">
+                <div class="product-img__img"></div>
+                <p class="product-img__text">Dysze PB. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    TECHGAFIL</p>
+            </div>
+        </div>
+    </section>
+    <!--- @include 'footer.kit' -->
 
     <script src="dist/js/script.min.js"></script>
+    <script src="dist/js/product.min.js"></script>
 </body>
 
 </html>
