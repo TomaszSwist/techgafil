@@ -336,9 +336,6 @@ nav {
 	overflow: hidden;
 	background: var(--dark-85);
 
-	&__container {
-	}
-
 	&__box {
 		position: absolute;
 		display: none;
@@ -625,69 +622,6 @@ footer {
 	display: none;
 }
 
-@keyframes show-cookies {
-	100% {
-		opacity: 1;
-		transform: translate(-50%, 0);
-	}
-}
-
-// .cookie::after {
-// 	content: '';
-// 	position: fixed;
-// 	width: 300px;
-// 	height: 300px;
-// 	background-repeat: no-repeat;
-// 	background-image: url(pngwing.com.png);
-// 	background-size: cover;
-// 	bottom: 0;
-// 	right: 0;
-// 	transform: translate(-50%,-50%);
-
-// }
-
-// .cookie {
-// 	position: fixed;
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	flex-direction: column;
-// 	bottom: 0;
-// 	width: 100%;
-// 	height: 20%;
-// 	background-color: #fff;
-// 	opacity: 0;
-// 	transform: translateY(200%);
-// 	animation: show-cookies 0.8s 0.8s forwards;
-// }
-
-// .cookie--text {
-// 	margin: 1em;
-// 	font-size: 20px;
-// }
-
-// .cookie--btn {
-// 	margin: 1em;
-// 	padding: 1em 2em;
-// 	font-size: 18px;
-// 	color: rgb(255, 255, 255);
-// 	background-color: rgb(72, 110, 214);
-// 	cursor: pointer;
-// 	border-radius: 10px;
-// 	border: none;
-// }
-
-// .hide {
-// 	display: none;
-// }
-
-// @keyframes show-cookies {
-// 	100% {
-// 		opacity: 1;
-// 		transform: translateY(0);
-// 	}
-// }
-
 ///////////
 // MEDIA //
 ///////////
@@ -936,5 +870,12 @@ footer {
 @keyframes show-menu {
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes show-cookies {
+	100% {
+		opacity: 1;
+		transform: translate(-50%, 0);
 	}
 }

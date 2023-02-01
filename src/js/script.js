@@ -8,7 +8,7 @@ const cookies = document.querySelector('.cookie')
 const cookiesBtn = document.querySelector('.cookie--btn')
 
 const checkCookiesAcceptance = () => {
-	localStorage.getItem('cookiesAccepted') ? cookies.classList.add('hide')
+	localStorage.getItem('cookiesAccepted') ? cookies.classList.add('hide'): false;
 }
 
 const handleNavColor = () => {
