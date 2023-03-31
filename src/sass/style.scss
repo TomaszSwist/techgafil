@@ -166,6 +166,7 @@ nav {
 			a {
 				display: flex;
 				align-items: center;
+				cursor: pointer;
 
 				img {
 					padding-right: 0.5em;
@@ -581,21 +582,59 @@ footer {
 // COOKIES //
 /////////////
 
-.cookie::before {
-	content: '🍪';
-	font-size: 10rem;
-	position: absolute;
-	top: -8rem;
-	left: 2rem;
-}
+// .cookie::before {
+// 	content: '🍪';
+// 	font-size: 5rem;
+// 	position: absolute;
+// 	top: -8rem;
+// 	left: 2rem;
+// }
+
+// .cookie {
+// 	position: fixed;
+// 	display: flex;
+// 	bottom: 0;
+// 	left: 50%;
+// 	width: 50%;
+// 	height: 10%;
+// 	border-radius: 5px 5px 0 0;
+// 	box-shadow: 0 0 10px var(--dark-70);
+// 	transform: translate(-50%, 100%);
+// 	background-color: #fff;
+// 	justify-content: center;
+// 	align-items: center;
+// 	opacity: 0;
+// 	animation: show-cookies 1s 1s forwards;
+
+// 	&--text {
+// 		color: #000;
+// 		text-align: center;
+// 		font-size: 2rem;
+// 		margin: 3em;
+// 	}
+
+// 	&--btn {
+// 		padding: 1em 2em;
+// 		font-size: 2rem;
+// 		color: #fff;
+// 		border-radius: 200px;
+// 		background-color: var(--dark);
+// 	}
+// }
+
+// .hide {
+// 	display: none;
+// }
 
 .cookie {
 	position: fixed;
 	display: flex;
+	flex-direction: column;
 	bottom: 0;
 	left: 50%;
-	width: 50%;
-	height: 10%;
+	min-width: 80%;
+	width: fit-content;
+	height: fit-content;
 	border-radius: 5px 5px 0 0;
 	box-shadow: 0 0 10px var(--dark-70);
 	transform: translate(-50%, 100%);
@@ -609,11 +648,12 @@ footer {
 		color: #000;
 		text-align: center;
 		font-size: 2rem;
-		margin: 3em;
+		margin: 1em;
 	}
 
 	&--btn {
-		padding: 1em 2em;
+		padding: 1em 1.5em;
+		margin-bottom: 1em;
 		font-size: 2rem;
 		color: #fff;
 		border-radius: 200px;
@@ -745,6 +785,22 @@ footer {
 	.contact-form {
 		width: 45%;
 	}
+
+	.cookie::before {
+		content: '🍪';
+		font-size: 8rem;
+		position: absolute;
+		top: -8rem;
+		left: 2rem;
+	}
+
+	.cookie {
+		flex-direction: row;
+
+		&--btn {
+			margin-top: 1em;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -814,6 +870,14 @@ footer {
 			}
 		}
 	}
+
+	.cookie::before {
+		font-size: 9rem;
+	}
+
+	.cookie {
+		min-width: 60%;
+	}
 }
 
 @media only screen and (min-width: 1366px) and (orientation: landscape) {
@@ -863,6 +927,10 @@ footer {
 
 	.contact-form {
 		width: 35%;
+	}
+
+	.cookie {
+		min-width: 50%;
 	}
 }
 
