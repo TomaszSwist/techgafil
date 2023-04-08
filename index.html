@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-translate="title">TECHGAFIL - Dysze chłodzące NNPB, PB i półfabrykaty rurek</title>
-    <meta data-translate="index__meta" name="description" content="Szukasz producenta dysz chłodzących PB i NNPB? Potrzebujesz półfabrykatów do własnych dysz? TECHGAFIL - producent dysz chłodzących PB, NNPB." />
+    <title id="title" data-translate="title">TECHGAFIL - Dysze chłodzące NNPB, PB i półfabrykaty rurek</title>
+    <meta id="meta_description" name="description" content="Szukasz producenta dysz chłodzących PB i NNPB? Potrzebujesz półfabrykatów do własnych dysz? TECHGAFIL - producent dysz chłodzących PB, NNPB." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,21 +22,19 @@
 
         <div class="menu__mobile-languages">
             <div class="menu__menu menu__mobile-languages--one-item">
-                <a><img src="dist/img/united-kingdom.webp" alt="flaga Wielkiej Brytanii">Languages</a>
-                <img class="menu__mobile-flag" src="dist/img/united-kingdom.webp" alt="flaga Wielkiej Brytanii">
+                <a><img src="dist/img/united-kingdom.webp">Languages</a>
+                <img class="menu__mobile-flag" src="dist/img/united-kingdom.webp">
             </div>
             <div class="menu__menu menu__mobile-languages--all-items">
-                <a onClick="handleLangChange('en')"><img src="dist/img/united-kingdom.webp"
-                        alt="flaga Wielkiej Brytanii">English</a>
-                <a onClick="handleLangChange('pl')"><img src="dist/img/poland.webp" alt="flaga Polski">Polski</a>
-                <a onClick="handleLangChange('de')"><img src="dist/img/germany.webp" alt="flaga Niemiec">Deutsche</a>
+                <a onClick="handleLangChange('en')"><img src="dist/img/united-kingdom.webp">English</a>
+                <a onClick="handleLangChange('pl')"><img src="dist/img/poland.webp">Polski</a>
+                <a onClick="handleLangChange('de')"><img src="dist/img/germany.webp">Deutsche</a>
             </div>
         </div>
         <div class="menu__menu menu__languages">
-            <a onClick="handleLangChange('pl')"><img src="dist/img/poland.webp" alt="flaga Polski">Polski</a>
-            <a onClick="handleLangChange('en')"><img src="dist/img/united-kingdom.webp"
-                    alt="flaga Wielkiej Brytanii">English</a>
-            <a onClick="handleLangChange('de')"><img src="dist/img/germany.webp" alt="flaga Niemiec">Deutsche</a>
+            <a onClick="handleLangChange('pl')"><img src="dist/img/poland.webp" >Polski</a>
+            <a onClick="handleLangChange('en')"><img src="dist/img/united-kingdom.webp">English</a>
+            <a onClick="handleLangChange('de')"><img src="dist/img/germany.webp" >Deutsche</a>
         </div>
 
         <div class="menu__mobile-menu">
@@ -45,13 +43,13 @@
             <div class="menu__mobile-menu--bottom"></div>
 
             <div class="menu__menu menu__mobile-menu--area">
-                <a href="produkty.html">Produkty</a>
-                <a href="kontakt.html">Kontakt</a>
+                <a data-translate="nav-foo__products" class="to-translate" href="produkty.html">Produkty</a>
+                <a data-translate="nav-foo__contact" class="to-translate" href="kontakt.html">Kontakt</a>
             </div>
         </div>
         <div class="menu__menu menu__menu-desktop">
-            <a href="produkty.html">Produkty</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a data-translate="nav-foo__products" class="to-translate" href="produkty.html">Produkty</a>
+            <a data-translate="nav-foo__contact" class="to-translate" href="kontakt.html">Kontakt</a>
         </div>
 
         <a href="/" class="logo"><img src="dist/img/TECHGAFIL - logo white.webp" alt="TECHGAFIL - logo"></a>
@@ -66,15 +64,15 @@
 
         <div class="main__text wrapper">
             <a class="main__text-header--center">
-                <h1 data-translate="index__cooling-tubes" class="main__text-header">Dysze chłodzące <br><span>PB</span> i <span>NNPB</span></h1>
+                <h1 data-translate="index__cooling-tubes" class="to-translate main__text-header">Dysze chłodzące <br><span>PB</span> i <span>NNPB</span></h1>
             </a>
         </div>
     </section>
     <footer>
     <div class="footer wrapper">
         <div class="menu__menu">
-            <a href="produkty.html">Produkty</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a data-translate="nav-foo__products" class="to-translate" href="produkty.html">Produkty</a>
+            <a data-translate="nav-foo__contact" class="to-translate" href="kontakt.html">Kontakt</a>
         </div>
         <a href="/" class="logo"><img src="dist/img/TECHGAFIL - logo white.webp" alt="TECHGAFIL - logo"></a>
         <div class="footer__social">
@@ -85,11 +83,12 @@
     </div>
 </footer>
     <div class="cookie">
-    <p class="cookie--text">Nasza strona korzysta z ciasteczek!</p>
-    <button class="cookie--btn">Akceptuję 🍪</button>
+    <p data-translate="cookies" class="to-translate cookie--text">Nasza strona korzysta z ciasteczek!</p>
+    <button data-translate="cookies__btn"class="cookie--btn to-translate">Akceptuję 🍪</button>
 </div>
 
-    <script src="dist/js/script.min.js"></script>
+    <script src="dist/js/script.min.js" ></script>
+    <script src="dist/js/translate_index.min.js" ></script>
 </body>
 
 </html>

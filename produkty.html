@@ -22,21 +22,19 @@
 
         <div class="menu__mobile-languages">
             <div class="menu__menu menu__mobile-languages--one-item">
-                <a><img src="dist/img/united-kingdom.webp" alt="flaga Wielkiej Brytanii">Languages</a>
-                <img class="menu__mobile-flag" src="dist/img/united-kingdom.webp" alt="flaga Wielkiej Brytanii">
+                <a><img src="dist/img/united-kingdom.webp">Languages</a>
+                <img class="menu__mobile-flag" src="dist/img/united-kingdom.webp">
             </div>
             <div class="menu__menu menu__mobile-languages--all-items">
-                <a onClick="handleLangChange('en')"><img src="dist/img/united-kingdom.webp"
-                        alt="flaga Wielkiej Brytanii">English</a>
-                <a onClick="handleLangChange('pl')"><img src="dist/img/poland.webp" alt="flaga Polski">Polski</a>
-                <a onClick="handleLangChange('de')"><img src="dist/img/germany.webp" alt="flaga Niemiec">Deutsche</a>
+                <a onClick="handleLangChange('en')"><img src="dist/img/united-kingdom.webp">English</a>
+                <a onClick="handleLangChange('pl')"><img src="dist/img/poland.webp">Polski</a>
+                <a onClick="handleLangChange('de')"><img src="dist/img/germany.webp">Deutsche</a>
             </div>
         </div>
         <div class="menu__menu menu__languages">
-            <a onClick="handleLangChange('pl')"><img src="dist/img/poland.webp" alt="flaga Polski">Polski</a>
-            <a onClick="handleLangChange('en')"><img src="dist/img/united-kingdom.webp"
-                    alt="flaga Wielkiej Brytanii">English</a>
-            <a onClick="handleLangChange('de')"><img src="dist/img/germany.webp" alt="flaga Niemiec">Deutsche</a>
+            <a onClick="handleLangChange('pl')"><img src="dist/img/poland.webp" >Polski</a>
+            <a onClick="handleLangChange('en')"><img src="dist/img/united-kingdom.webp">English</a>
+            <a onClick="handleLangChange('de')"><img src="dist/img/germany.webp" >Deutsche</a>
         </div>
 
         <div class="menu__mobile-menu">
@@ -45,13 +43,13 @@
             <div class="menu__mobile-menu--bottom"></div>
 
             <div class="menu__menu menu__mobile-menu--area">
-                <a href="produkty.html">Produkty</a>
-                <a href="kontakt.html">Kontakt</a>
+                <a data-translate="nav-foo__products" class="to-translate" href="produkty.html">Produkty</a>
+                <a data-translate="nav-foo__contact" class="to-translate" href="kontakt.html">Kontakt</a>
             </div>
         </div>
         <div class="menu__menu menu__menu-desktop">
-            <a href="produkty.html">Produkty</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a data-translate="nav-foo__products" class="to-translate" href="produkty.html">Produkty</a>
+            <a data-translate="nav-foo__contact" class="to-translate" href="kontakt.html">Kontakt</a>
         </div>
 
         <a href="/" class="logo"><img src="dist/img/TECHGAFIL - logo white.webp" alt="TECHGAFIL - logo"></a>
@@ -105,8 +103,8 @@
     <footer>
     <div class="footer wrapper">
         <div class="menu__menu">
-            <a href="produkty.html">Produkty</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a data-translate="nav-foo__products" class="to-translate" href="produkty.html">Produkty</a>
+            <a data-translate="nav-foo__contact" class="to-translate" href="kontakt.html">Kontakt</a>
         </div>
         <a href="/" class="logo"><img src="dist/img/TECHGAFIL - logo white.webp" alt="TECHGAFIL - logo"></a>
         <div class="footer__social">
@@ -117,8 +115,8 @@
     </div>
 </footer>
     <div class="cookie">
-    <p class="cookie--text">Nasza strona korzysta z ciasteczek!</p>
-    <button class="cookie--btn">Akceptuję 🍪</button>
+    <p data-translate="cookies" class="to-translate cookie--text">Nasza strona korzysta z ciasteczek!</p>
+    <button data-translate="cookies__btn"class="cookie--btn to-translate">Akceptuję 🍪</button>
 </div>
 
     <script src="dist/js/script.min.js"></script>
