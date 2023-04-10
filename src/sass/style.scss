@@ -507,12 +507,17 @@ nav {
 	}
 }
 
-///////////////
-// THANK YOU //
-///////////////
+////////////////////
+// THANK YOU / 404//
+////////////////////
 
 .main__text--thank-you {
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1em 0.5em;
 	color: #000;
 	top: 50%;
 	left: 50%;
@@ -524,7 +529,17 @@ nav {
 	background-color: #fff;
 
 	p {
-		padding: 2em;
+		padding: 1em 2em;
+	}
+
+	.button {
+		font-weight: 700;
+		font-size: 2rem;
+		color: #fff;
+		background: var(--dark);
+		padding: 1em 1.5em;
+		border-radius: 1000px;
+		text-transform: uppercase;
 	}
 }
 

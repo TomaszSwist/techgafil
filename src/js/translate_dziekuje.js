@@ -31,6 +31,14 @@ const langs = {
 		en: 'Thank you, the message has been sent!',
 		de: 'Danke, die Nachricht wurde abgeschickt!',
 	},
+    '404__ups': {
+		en: 'Oops! There is no such page. The page has most probably been moved or deleted.',
+		de: 'Huch! Diese Seite gibt es nicht. Die Seite wurde höchstwahrscheinlich verschoben oder gelöscht.',
+	},
+    '404__btn': {
+		en: 'Back to the homepage',
+		de: 'Zurück zur Startseite',
+	},
 }
 
 let toTranslate
