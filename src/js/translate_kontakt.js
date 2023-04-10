@@ -106,7 +106,6 @@ const translateSite = lang => {
 		document.querySelector('#contact__p-message').placeholder = langs['contact__p-message'][`${lang}`]
 		// site and cookies
 		toTranslate = document.querySelectorAll('.to-translate')
-		console.log(toTranslate)
 		toTranslate.forEach(el => {
 			const id = el.getAttribute('data-translate')
 			const newContent = langs[`${id}`][`${lang}`]

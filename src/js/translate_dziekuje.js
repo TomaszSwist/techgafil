@@ -8,10 +8,6 @@ const langs = {
 		en: 'TECHGAFIL - Cooling tubes: NNPB, PB and tube blanks',
 		de: 'TECHGAFIL - Kühlrohre: NNPB, PB und Rohrrohlinge',
 	},
-    'meta_description': {
-		en: 'Are you looking for a manufacturer of PB and NNPB cooling tubes? Need semi-finished products for your own nozzles? TECHGAFIL - manufacturer of PB, NNPB cooling nozzles.',
-		de: 'Sie suchen einen Hersteller von PB- und NNPB-Kühlrohren? Benötigen Sie Halbfertigprodukte für Ihre eigenen Düsen? TECHGAFIL - Hersteller von PB-, NNPB-Kühldüsen.',
-	},
 	// cookies
     cookies: {
         en: 'Our website uses cookies!',
@@ -31,9 +27,9 @@ const langs = {
         de: 'Kontakt',
     },
 	// site
-    'index__cooling-tubes': {
-		en: '<span>PB</span>, <span>NNPB</span> <br> cooling nozzles.',
-		de: '<span>PB</span>, <br><span>NNPB</span>-Kühldüsen.',
+    'thanku__thanks': {
+		en: 'Thank you, the message has been sent!',
+		de: 'Danke, die Nachricht wurde abgeschickt!',
 	},
 }
 
@@ -45,7 +41,6 @@ const translateSite = lang => {
 	} else {
 		// title and meta
         document.querySelector('#title').innerHTML = langs.title[`${lang}`]
-        document.querySelector('#meta_description').content = langs.meta_description[`${lang}`]
 		// site
 		toTranslate = document.querySelectorAll('.to-translate')
 		toTranslate.forEach(el => {
