@@ -2,6 +2,7 @@
 Business website. The main goal was to create a minimalist site that: : informs about what the company produces, shows products, had a contact form, is multilingual, has a simple design.
 
 This is my first site used in the real world, created with a different technology than WordPress.
+
 URL: https://techgafil.pl
 
 Key features:
